@@ -1,7 +1,30 @@
+let time_length = 0;  // Use `let` for reassignment
+
+function planLength() {
+    setInterval(function() {
+        fetch('server_plan_length.php')
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                // Assuming data.val_length is an object that contains 'val_length' as a key
+                if (data && data.val_length.val_length) {
+                    time_length = data.val_length.val_length-1;  // Correct assignment
+		    console.log(`time length ${time_length}`)
+                }
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
+    }, 1000);  // Fetches data every second
+}
+
+
 
   // Retrieve the saved timeValue from localStorage, or default to 0 if not found
   let timeValue = parseInt(localStorage.getItem("timeValue")) || 0;
-//  timeValue = 1      
+//  timeValue = 0 
+ // localStorage.setItem("timeValue", timeValue);      
   // Function to enable one option and disable the rest
   function enableOnlyOption(value) {
     const options = document.querySelectorAll('#time_value option');
@@ -36,6 +59,11 @@
   setInterval(() => {
     let currentTime = new Date();
     console.log("Current time: " + currentTime);
+    if(timeValue == time_length){
+       console.log("reset time value")
+       timeValue = 0;
+       console.log(`time value:${timeValue}`)
+     }
 
     if (currentTime >= startTime) {
       console.log(`1 hour has elapsed since: ${startTime}`);
@@ -64,3 +92,10 @@
       console.log(`Time left until next interval: ${timeLeft.toFixed(2)} minutes`);
     }
   }, 1000); // Check every second
+
+ 
+console.log(`time length ${time_length}`)
+
+document.addEventListener("DOMContentLoaded", (event) => {
+planLength();
+});
