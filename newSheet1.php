@@ -14,6 +14,10 @@ error_reporting(E_ALL);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+
     <!-- <link rel="stylesheet" href="../cssfile/sheet_style.css">-->
     <title>New Data Sheet</title>
 </head>
@@ -31,18 +35,24 @@ error_reporting(E_ALL);
         height: 1190px;
         width: 1850px;
 
-
     }
 
     .main-container {
         background-color: #fff;
         border: 1px solid #e0e0e0;
         width: 1850px;
-        height: 1180px;
+        height: 1190px;
 
 
     }
+    .red-text{
+	color:red;
 
+    }
+    .green-text{
+	color:green;
+
+    }
     .header-title-container {
         display: flex;
         flex-direction: row;
@@ -343,7 +353,7 @@ error_reporting(E_ALL);
         <div class="header-container">
             <div class="header-title-container">
                 <div class="nichiv-logo-container">
-                    <img src="../pics/nichivi_logo.jpg" crossorigin="anonymous" alt="">
+                    <img src="nichivi_logo.jpg" crossorigin="anonymous" alt="">
 
                     <div class="name-company">
                         <p>Nichivi Philippines Corps.</p>
@@ -473,12 +483,12 @@ error_reporting(E_ALL);
                     <td>6AM-7AM</td>
                     <td id="cycle-time1">231.23</td>
                     <td id="mins1">60</td>
-                    <td id="plan-per-hr1">16</td>
-                    <td id="total-plan-hr1">16</td>
-                    <td id="actual-per-hr1">16</td>
-                    <td id="total-actual-hr1">16</td>
-                    <td id="achieved1">100</td>
-                    <td id="NG1">0</td>
+                    <td id="plan-per-hr1"></td>
+                    <td id="total-plan-hr1"></td>
+                    <td id="actual-per-hr1"></td>
+                    <td id="total-actual-hr1"></td>
+                    <td id="achieved1"></td>
+                    <td id="NG1"></td>
                     <td id="process1"></td>
                     <td id="details1"></td>
                     <td id="action1"></td>
@@ -490,12 +500,12 @@ error_reporting(E_ALL);
                     <td>7AM-8AM</td>
                     <td id="cycle-time2">231.23</td>
                     <td id="mins1">60</td>
-                    <td id="plan-per-hr2">16</td>
-                    <td id="total-plan-hr2">16</td>
-                    <td id="actual-per-hr2">16</td>
-                    <td id="total-actual-hr2">16</td>
-                    <td id="achieved2">100</td>
-                    <td id="NG2">0</td>
+                    <td id="plan-per-hr2"></td>
+                    <td id="total-plan-hr2"></td>
+                    <td id="actual-per-hr2"></td>
+                    <td id="total-actual-hr2"></td>
+                    <td id="achieved2"></td>
+                    <td id="NG2"></td>
                     <td id="process2"></td>
                     <td id="details2"></td>
                     <td id="action2"></td>
@@ -507,205 +517,205 @@ error_reporting(E_ALL);
                     <td>8AM-9AM</td>
                     <td id="cycle-time3">231.23</td>
                     <td id="mins3">60</td>
-                    <td id="plan-per-hr3">16</td>
-                    <td id="total-plan-hr3">16</td>
-                    <td id="actual-per-hr3">16</td>
-                    <td id="total-actual-hr3">16</td>
-                    <td id="achieved3">100</td>
-                    <td id="NG3">0</td>
-                    <td id="process3">-</td>
-                    <td id="details3">-</td>
-                    <td id="action3">-</td>
-                    <td id="downtime3">-</td>
-                    <td id="pic3">-</td>
-                    <td id="remarks3">-</td>
+                    <td id="plan-per-hr3"></td>
+                    <td id="total-plan-hr3"></td>
+                    <td id="actual-per-hr3"></td>
+                    <td id="total-actual-hr3"></td>
+                    <td id="achieved3"></td>
+                    <td id="NG3"></td>
+                    <td id="process3"></td>
+                    <td id="details3"></td>
+                    <td id="action3"></td>
+                    <td id="downtime3"></td>
+                    <td id="pic3"></td>
+                    <td id="remarks3"></td>
                 </tr>
                 <tr>
                     <td>9AM-10AM</td>
                     <td id="cycle-time4">231.23</td>
                     <td id="mins4">60</td>
-                    <td id="plan-per-hr4">16</td>
-                    <td id="total-plan-hr4">16</td>
-                    <td id="actual-per-hr4">16</td>
-                    <td id="total-actual-hr4">16</td>
-                    <td id="achieved4">100</td>
-                    <td id="NG4">0</td>
-                    <td id="process4">-</td>
-                    <td id="details4">-</td>
-                    <td id="action4">-</td>
-                    <td id="downtime4">-</td>
-                    <td id="pic4">-</td>
-                    <td id="remarks4">-</td>
+                    <td id="plan-per-hr4"></td>
+                    <td id="total-plan-hr4"></td>
+                    <td id="actual-per-hr4"></td>
+                    <td id="total-actual-hr4"></td>
+                    <td id="achieved4"></td>
+                    <td id="NG4"></td>
+                    <td id="process4"></td>
+                    <td id="details4"></td>
+                    <td id="action4"></td>
+                    <td id="downtime4"></td>
+                    <td id="pic4"></td>
+                    <td id="remarks4"></td>
                 </tr>
                 <tr>
                     <td>10AM-11AM</td>
                     <td id="cycle-time5">231.23</td>
                     <td id="mins5">60</td>
-                    <td id="plan-per-hr5">16</td>
-                    <td id="total-plan-hr5">16</td>
-                    <td id="actual-per-hr5">16</td>
-                    <td id="total-actual-hr5">16</td>
-                    <td id="achieved5">100</td>
-                    <td id="NG5">0</td>
-                    <td id="process5">-</td>
-                    <td id="details5">-</td>
-                    <td id="action5">-</td>
-                    <td id="downtime5">-</td>
-                    <td id="pic5">-</td>
-                    <td id="remarks5">-</td>
+                    <td id="plan-per-hr5"></td>
+                    <td id="total-plan-hr5"></td>
+                    <td id="actual-per-hr5"></td>
+                    <td id="total-actual-hr5"></td>
+                    <td id="achieved5"></td>
+                    <td id="NG5"></td>
+                    <td id="process5"></td>
+                    <td id="details5"></td>
+                    <td id="action5"></td>
+                    <td id="downtime5"></td>
+                    <td id="pic5"></td>
+                    <td id="remarks5"></td>
                 </tr>
                 <tr>
                     <td>11AM-12NN</td>
                     <td id="cycle-time6">231.23</td>
                     <td id="mins6">60</td>
-                    <td id="plan-per-hr6">16</td>
-                    <td id="total-plan-hr6">16</td>
-                    <td id="actual-per-hr6">16</td>
-                    <td id="total-actual-hr6">16</td>
-                    <td id="achieved6">100</td>
-                    <td id="NG6">0</td>
-                    <td id="process6">-</td>
-                    <td id="details6">-</td>
-                    <td id="action6">-</td>
-                    <td id="downtime6">-</td>
-                    <td id="pic6">-</td>
-                    <td id="remarks6">-</td>
+                    <td id="plan-per-hr6"></td>
+                    <td id="total-plan-hr6"></td>
+                    <td id="actual-per-hr6"></td>
+                    <td id="total-actual-hr6"></td>
+                    <td id="achieved6"></td>
+                    <td id="NG6"></td>
+                    <td id="process6"></td>
+                    <td id="details6"></td>
+                    <td id="action6"></td>
+                    <td id="downtime6"></td>
+                    <td id="pic6"></td>
+                    <td id="remarks6"></td>
                 </tr>
                 <tr>
                     <td>12NN-1PM</td>
                     <td id="cycle-time7">231.23</td>
                     <td id="mins7">60</td>
-                    <td id="plan-per-hr7">16</td>
-                    <td id="total-plan-hr7">16</td>
-                    <td id="actual-per-hr7">16</td>
-                    <td id="total-actual-hr7">16</td>
-                    <td id="achieved7">100</td>
-                    <td id="NG7">0</td>
-                    <td id="process7">-</td>
-                    <td id="details7">-</td>
-                    <td id="action7">-</td>
-                    <td id="downtime7">-</td>
-                    <td id="pic7">-</td>
-                    <td id="remarks7">-</td>
+                    <td id="plan-per-hr7"></td>
+                    <td id="total-plan-hr7"></td>
+                    <td id="actual-per-hr7"></td>
+                    <td id="total-actual-hr7"></td>
+                    <td id="achieved7"></td>
+                    <td id="NG7"></td>
+                    <td id="process7"></td>
+                    <td id="details7"></td>
+                    <td id="action7"></td>
+                    <td id="downtime7"></td>
+                    <td id="pic7"></td>
+                    <td id="remarks7"></td>
                 </tr>
                 <tr>
                     <td>1PM-2PM</td>
                     <td id="cycle-time8">231.23</td>
                     <td id="mins8">60</td>
-                    <td id="plan-per-hr8">16</td>
-                    <td id="total-plan-hr8">16</td>
-                    <td id="actual-per-hr8">16</td>
-                    <td id="total-actual-hr8">16</td>
-                    <td id="achieved8">100</td>
-                    <td id="NG8">0</td>
-                    <td id="process8">-</td>
-                    <td id="details8">-</td>
-                    <td id="action8">-</td>
-                    <td id="downtime8">-</td>
-                    <td id="pic8">-</td>
-                    <td id="remarks8">-</td>
+                    <td id="plan-per-hr8"></td>
+                    <td id="total-plan-hr8"></td>
+                    <td id="actual-per-hr8"></td>
+                    <td id="total-actual-hr8"></td>
+                    <td id="achieved8"></td>
+                    <td id="NG8"></td>
+                    <td id="process8"></td>
+                    <td id="details8"></td>
+                    <td id="action8"></td>
+                    <td id="downtime8"></td>
+                    <td id="pic8"></td>
+                    <td id="remarks8"></td>
                 </tr>
                 <tr>
                     <td>2PM-3PM</td>
                     <td id="cycle-time9">231.23</td>
                     <td id="mins9">60</td>
-                    <td id="plan-per-hr9">16</td>
-                    <td id="total-plan-hr9">16</td>
-                    <td id="actual-per-hr9">16</td>
-                    <td id="total-actual-hr9">16</td>
-                    <td id="achieved9">100</td>
-                    <td id="NG9">0</td>
-                    <td id="process9">-</td>
-                    <td id="details9">-</td>
-                    <td id="action9">-</td>
-                    <td id="downtime9">-</td>
-                    <td id="pic9">-</td>
-                    <td id="remarks9">-</td>
+                    <td id="plan-per-hr9"></td>
+                    <td id="total-plan-hr9"></td>
+                    <td id="actual-per-hr9"></td>
+                    <td id="total-actual-hr9"></td>
+                    <td id="achieved9"></td>
+                    <td id="NG9"></td>
+                    <td id="process9"></td>
+                    <td id="details9"></td>
+                    <td id="action9"></td>
+                    <td id="downtime9"></td>
+                    <td id="pic9"></td>
+                    <td id="remarks9"></td>
                 </tr>
                 <tr>
                     <td>3PM-4PM</td>
                     <td id="cycle-time10">231.23</td>
                     <td id="mins10">60</td>
-                    <td id="plan-per-hr10">16</td>
-                    <td id="total-plan-hr10">16</td>
-                    <td id="actual-per-hr10">16</td>
-                    <td id="total-actual-hr10">16</td>
-                    <td id="achieved10">100</td>
-                    <td id="NG10">0</td>
-                    <td id="process10">-</td>
-                    <td id="details10">-</td>
-                    <td id="action10">-</td>
-                    <td id="downtime10">-</td>
-                    <td id="pic10">-</td>
-                    <td id="remarks10">-</td>
+                    <td id="plan-per-hr10"></td>
+                    <td id="total-plan-hr10"></td>
+                    <td id="actual-per-hr10"></td>
+                    <td id="total-actual-hr10"></td>
+                    <td id="achieved10"></td>
+                    <td id="NG10"></td>
+                    <td id="process10"></td>
+                    <td id="details10"></td>
+                    <td id="action10"></td>
+                    <td id="downtime10"></td>
+                    <td id="pic10"></td>
+                    <td id="remarks10"></td>
                 </tr>
                 <tr>
                     <td>4PM-5PM</td>
                     <td id="cycle-time11">231.23</td>
                     <td id="mins11">60</td>
-                    <td id="plan-per-hr11">16</td>
-                    <td id="total-plan-hr11">16</td>
-                    <td id="actual-per-hr11">16</td>
-                    <td id="total-actual-hr11">16</td>
-                    <td id="achieved11">100</td>
-                    <td id="NG11">0</td>
-                    <td id="process11">-</td>
-                    <td id="details11">-</td>
-                    <td id="action11">-</td>
-                    <td id="downtime11">-</td>
-                    <td id="pic11">-</td>
+                    <td id="plan-per-hr11"></td>
+                    <td id="total-plan-hr11"></td>
+                    <td id="actual-per-hr11"></td>
+                    <td id="total-actual-hr11"></td>
+                    <td id="achieved11"></td>
+                    <td id="NG11"></td>
+                    <td id="process11"></td>
+                    <td id="details11"></td>
+                    <td id="action11"></td>
+                    <td id="downtime11"></td>
+                    <td id="pic11"></td>
                     <td id="remarks11">-</td>
                 </tr>
                 <tr>
                     <td>5PM-6PM</td>
                     <td id="cycle-time12">231.23</td>
                     <td id="mins12">60</td>
-                    <td id="plan-per-hr12">16</td>
-                    <td id="total-plan-hr12">16</td>
-                    <td id="actual-per-hr12">16</td>
-                    <td id="total-actual-hr12">16</td>
-                    <td id="achieved12">100</td>
-                    <td id="NG12">0</td>
-                    <td id="process12">-</td>
-                    <td id="details12">-</td>
-                    <td id="action12">-</td>
-                    <td id="downtime12">-</td>
-                    <td id="pic12">-</td>
-                    <td id="remarks12">-</td>
+                    <td id="plan-per-hr12"></td>
+                    <td id="total-plan-hr12"></td>
+                    <td id="actual-per-hr12"></td>
+                    <td id="total-actual-hr12"></td>
+                    <td id="achieved12"></td>
+                    <td id="NG12"></td>
+                    <td id="process12"></td>
+                    <td id="details12"></td>
+                    <td id="action12"></td>
+                    <td id="downtime12"></td>
+                    <td id="pic12"></td>
+                    <td id="remarks12"></td>
                 </tr>
                 <tr>
                     <td>6PM-7PM</td>
                     <td id="cycle-time13">231.23</td>
                     <td id="mins13">60</td>
-                    <td id="plan-per-hr13">16</td>
-                    <td id="total-plan-hr13">16</td>
-                    <td id="actual-per-hr13">16</td>
-                    <td id="total-actual-hr13">16</td>
-                    <td id="achieved13">100</td>
-                    <td id="NG13">0</td>
-                    <td id="process13">-</td>
-                    <td id="details13">-</td>
-                    <td id="action13">-</td>
-                    <td id="downtime13">-</td>
-                    <td id="pic13">-</td>
-                    <td id="remarks13">-</td>
+                    <td id="plan-per-hr13"></td>
+                    <td id="total-plan-hr13"></td>
+                    <td id="actual-per-hr13"></td>
+                    <td id="total-actual-hr13"></td>
+                    <td id="achieved13"></td>
+                    <td id="NG13"></td>
+                    <td id="process13"></td>
+                    <td id="details13"></td>
+                    <td id="action13"></td>
+                    <td id="downtime13"></td>
+                    <td id="pic13"></td>
+                    <td id="remarks13"></td>
                 </tr>
                 <tr>
                     <td>7PM-8PM</td>
                     <td id="cycle-time14">231.23</td>
                     <td id="mins14">60</td>
-                    <td id="plan-per-hr14">16</td>
-                    <td id="total-plan-hr14">16</td>
-                    <td id="actual-per-hr14">16</td>
-                    <td id="total-actual-hr14">16</td>
-                    <td id="achieved14">100</td>
-                    <td id="NG14">0</td>
-                    <td id="process14">-</td>
-                    <td id="details14">-</td>
-                    <td id="action14">-</td>
-                    <td id="downtime14">-</td>
-                    <td id="pic14">-</td>
-                    <td id="remarks14">-</td>
+                    <td id="plan-per-hr14"></td>
+                    <td id="total-plan-hr14"></td>
+                    <td id="actual-per-hr14"></td>
+                    <td id="total-actual-hr14"></td>
+                    <td id="achieved14"></td>
+                    <td id="NG14"></td>
+                    <td id="process14"></td>
+                    <td id="details14"></td>
+                    <td id="action14"></td>
+                    <td id="downtime14"></td>
+                    <td id="pic14"></td>
+                    <td id="remarks14"></td>
                 </tr>
             </tbody>
             </table>
@@ -771,45 +781,31 @@ error_reporting(E_ALL);
                         <td>BREAKTIME:</td>
                         <td id="breaktime_sum">1.40</td>
                     </tr>
+                    <tr>
+                        <td>ACHIEVED TODAY:</td>
+                        <td id="achieve_day">1.40</td>
+                    </tr>
+
                 </table>
 
             </div>
         </div>
-        <div style="margin-right:3px; width:auto; text-align:end;">
+        <div style="font-size:10px;margin-right:7px; margin-top:2px; width:auto; text-align:end; font-weight:800;">
             F-1-0085-02
         </div>
     </div>
-    <script src="../new/js_folder/data-graph.js"></script>
-    <script src="../new/js_folder/downtime-graph.js"></script>
+    
 
     <script>
-        document.getElementById("captureButton").addEventListener("click", function() {
-            const content = document.getElementById("productionData");
+            document.getElementById('captureButton').addEventListener('click', function() {
+      html2canvas(document.getElementById('productionData')).then(canvas => {
+        // Convert canvas to Base64
+        const base64Image = canvas.toDataURL('image/png');
+        // Send to server
+        sendToServer(base64Image);
+      });
 
-            html2canvas(content).then((canvas) => {
-                const imgData = canvas.toDataURL("image/png");
-                const {
-                    jsPDF
-                } = window.jspdf;
-                const pdf = new jsPDF("l", "mm", "a4"); // 'l' for landscape
-
-                const pageWidth = pdf.internal.pageSize.getWidth(); // Landscape width (297mm)
-                const pageHeight = pdf.internal.pageSize.getHeight(); // Landscape height (210mm)
-
-                const imgWidth = pageWidth - 20; // Leave 10mm margins on each side
-                const imgHeight = (canvas.height * imgWidth) / canvas.width; // Maintain aspect ratio
-
-                const x = (pageWidth - imgWidth) / 2; // Center horizontally
-                const y = (pageHeight - imgHeight) / 2; // Center vertically
-
-                pdf.addImage(imgData, "PNG", x, y, imgWidth, imgHeight);
-
-                const pdfBlob = pdf.output("blob");
-                sendToServer(pdfBlob);
-                
-                //pdf.save("data_production.pdf");
-            });
-        });
+    });
 
         function sendToServer(base64Image) {
             const partno = document.getElementById('part_no').textContent;
@@ -840,8 +836,8 @@ error_reporting(E_ALL);
                 }
             };
             xhr.send(`image=${encodeURIComponent(base64Image)}`);
-
-
+	 
+         
             const actualReset = {
                 data_hr: 0,
                 totalData_hr: 0,
@@ -1001,7 +997,7 @@ error_reporting(E_ALL);
             xhr5.send(urlEncodedData5);
 
             alert("Data recorded!");
-            window.location.href = "lcd_code.php";
+            window.location.href = "lcd_rev_code1.php";
 
         }
 
@@ -1015,7 +1011,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr1").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr1").text(data.countPerHr.countTol);
-                    $("#achieve1").text(data.achieved.achieved + "%");
+                    $("#achieved1").text(data.achieved.achieved+"%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1035,7 +1031,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr2").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr2").text(data.countPerHr.countTol);
-                    $("#achieve2").text(data.achieved.achieved + "%");
+                    $("#achieved2").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1054,7 +1050,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr3").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr3").text(data.countPerHr.countTol);
-                    $("#achieve3").text(data.achieved.achieved + "%");
+                    $("#achieved3").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1072,7 +1068,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr4").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr4").text(data.countPerHr.countTol);
-                    $("#achieve4").text(data.achieved.achieved + "%");
+                    $("#achieved4").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1090,7 +1086,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr5").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr5").text(data.countPerHr.countTol);
-                    $("#achieve5").text(data.achieved.achieved + "%");
+                    $("#achieved5").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1108,7 +1104,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr6").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr6").text(data.countPerHr.countTol);
-                    $("#achieve6").text(data.achieved.achieved + "%");
+                    $("#achieved6").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1126,7 +1122,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr7").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr7").text(data.countPerHr.countTol);
-                    $("#achieve7").text(data.achieved.achieved + "%");
+                    $("#achieved7").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1144,7 +1140,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr8").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr8").text(data.countPerHr.countTol);
-                    $("#achieve8").text(data.achieved.achieved + "%");
+                    $("#achieved8").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1162,7 +1158,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr9").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr9").text(data.countPerHr.countTol);
-                    $("#achieve9").text(data.achieved.achieved + "%");
+                    $("#achieved9").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1180,7 +1176,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr10").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr10").text(data.countPerHr.countTol);
-                    $("#achieve10").text(data.achieved.achieved + "%");
+                    $("#achieved10").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1198,7 +1194,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr11").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr11").text(data.countPerHr.countTol);
-                    $("#achieve11").text(data.achieved.achieved + "%");
+                    $("#achieved11").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1216,7 +1212,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr12").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr12").text(data.countPerHr.countTol);
-                    $("#achieve12").text(data.achieved.achieved + "%");
+                    $("#achieved12").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1234,7 +1230,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr13").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr13").text(data.countPerHr.countTol);
-                    $("#achieve13").text(data.achieved.achieved + "%");
+                    $("#achieved13").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1252,7 +1248,7 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     $("#actual-per-hr14").text(data.countPerHr.countPerHr);
                     $("#total-actual-hr14").text(data.countPerHr.countTol);
-                    $("#achieve14").text(data.achieved.achieved + "%");
+                    $("#achieved14").text(data.achieved.achieved + "%");
 
                 }).catch(function(error) {
                     console.log(error);
@@ -1603,20 +1599,20 @@ error_reporting(E_ALL);
                 }).then(function(data) {
                     //countValue.innerText = JSON.stringify(data.viewcount,2,null);
                     // total_Value1.innerText  = JSON.stringify(data.viewcount2,2,null);
-                    $('#plan1').text(data.planp1.plan1);
-                    $("#plan2").text(data.planp2.plan2);
-                    $("#plan3").text(data.planp3.plan3);
-                    $("#plan4").text(data.planp4.plan4);
-                    $("#plan5").text(data.planp5.plan5);
-                    $("#plan6").text(data.planp6.plan6);
-                    $("#plan7").text(data.planp7.plan7);
-                    $("#plan8").text(data.planp8.plan8);
-                    $("#plan9").text(data.planp9.plan9);
-                    $("#plan10").text(data.planp10.plan10);
-                    $("#plan11").text(data.planp11.plan11);
-                    $("#plan12").text(data.planp12.plan12);
-                    $("#plan13").text(data.planp13.plan13);
-                    $("#plan14").text(data.planp14.plan14);
+                    $('#plan-per-hr1').text(data.planp1.plan1);
+                    $("#plan-per-hr2").text(data.planp2.plan2);
+                    $("#plan-per-hr3").text(data.planp3.plan3);
+                    $("#plan-per-hr4").text(data.planp4.plan4);
+                    $("#plan-per-hr5").text(data.planp5.plan5);
+                    $("#plan-per-hr6").text(data.planp6.plan6);
+                    $("#plan-per-hr7").text(data.planp7.plan7);
+                    $("#plan-per-hr8").text(data.planp8.plan8);
+                    $("#plan-per-hr9").text(data.planp9.plan9);
+                    $("#plan-per-hr10").text(data.planp10.plan10);
+                    $("#plan-per-hr11").text(data.planp11.plan11);
+                    $("#plan-per-hr12").text(data.planp12.plan12);
+                    $("#plan-per-hr13").text(data.planp13.plan13);
+                    $("#plan-per-hr14").text(data.planp14.plan14);
                     // countValue.textContent = dataviewcount;
 
                 }).catch(function(error) {
@@ -1635,20 +1631,20 @@ error_reporting(E_ALL);
 
                 }).then(function(data) {
 
-                    $("#total_plan1").text(data.planpt1.PLANT1);
-                    $("#total_plan2").text(data.planpt2.PLANT2);
-                    $("#total_plan3").text(data.planpt3.PLANT3);
-                    $("#total_plan4").text(data.planpt4.PLANT4);
-                    $("#total_plan5").text(data.planpt5.PLANT5);
-                    $("#total_plan6").text(data.planpt6.PLANT6);
-                    $("#total_plan7").text(data.planpt7.PLANT7);
-                    $("#total_plan8").text(data.planpt8.PLANT8);
-                    $("#total_plan9").text(data.planpt9.PLANT9);
-                    $("#total_plan10").text(data.planpt10.PLANT10);
-                    $("#total_plan11").text(data.planpt11.PLANT11);
-                    $("#total_plan12").text(data.planpt12.PLANT12);
-                    $("#total_plan13").text(data.planpt13.PLANT13);
-                    $("#total_plan14").text(data.planpt14.PLANT14);
+                    $("#total-plan-hr1").text(data.planpt1.PLANT1);
+                    $("#total-plan-hr2").text(data.planpt2.PLANT2);
+                    $("#total-plan-hr3").text(data.planpt3.PLANT3);
+                    $("#total-plan-hr4").text(data.planpt4.PLANT4);
+                    $("#total-plan-hr5").text(data.planpt5.PLANT5);
+                    $("#total-plan-hr6").text(data.planpt6.PLANT6);
+                    $("#total-plan-hr7").text(data.planpt7.PLANT7);
+                    $("#total-plan-hr8").text(data.planpt8.PLANT8);
+                    $("#total-plan-hr9").text(data.planpt9.PLANT9);
+                    $("#total-plan-hr10").text(data.planpt10.PLANT10);
+                    $("#total-plan-hr11").text(data.planpt11.PLANT11);
+                    $("#total-plan-hr12").text(data.planpt12.PLANT12);
+                    $("#total-plan-hr13").text(data.planpt13.PLANT13);
+                    $("#total-plan-hr14").text(data.planpt14.PLANT14);
                     // countValue.textContent = dataviewcount;
 
                 }).catch(function(error) {
@@ -1658,7 +1654,7 @@ error_reporting(E_ALL);
             }, 1000);
         }
         let copiedPlan = [];
-        const ctx = document.getElementById('printchart').getContext('2d');
+        const ctx = document.getElementById('production-data-grp').getContext('2d');
         const chart = new Chart(ctx, {
             type: 'bar',
             data: {
@@ -1703,7 +1699,7 @@ error_reporting(E_ALL);
 
                         // Set colors based on comparison
                         chart.data.datasets[0].backgroundColor = data.datas.map((value, index) => {
-                            console.log(`Comparing production value: ${value} with target: ${copiedPlan[index]}`);
+                           // console.log(`Comparing production value: ${value} with target: ${copiedPlan[index]}`);
                             return Number(value) >= Number(copiedPlan[index]) ? '#28A745' : 'red';
                         });
                     } else {
@@ -1738,7 +1734,7 @@ error_reporting(E_ALL);
                     alert('Failed to fetch plan data: ' + error.message);
                 });
         }
-        const ctxhD = document.getElementById('down_chart_print').getContext('2d');
+        const ctxhD = document.getElementById('downtime-data-grp').getContext('2d');
         const chartD = new Chart(ctxhD, {
             type: 'bar',
             data: {
@@ -1803,20 +1799,20 @@ error_reporting(E_ALL);
                     return response.json();
 
                 }).then(function(data) {
-                    $("#totalng1").text(data.ng1.ng1);
-                    $("#totalng2").text(data.ng2.ng2);
-                    $("#totalng3").text(data.ng3.ng3);
-                    $("#totalng4").text(data.ng4.ng4);
-                    $("#totalng5").text(data.ng5.ng5);
-                    $("#totalng6").text(data.ng6.ng6);
-                    $("#totalng7").text(data.ng7.ng7);
-                    $("#totalng8").text(data.ng8.ng8);
-                    $("#totalng9").text(data.ng9.ng9);
-                    $("#totalng10").text(data.ng10.ng10);
-                    $("#totalng11").text(data.ng11.ng11);
-                    $("#totalng12").text(data.ng12.ng12);
-                    $("#totalng13").text(data.ng13.ng13);
-                    $("#totalng14").text(data.ng14.ng14);
+                    $("#NG1").text(data.ng1.ng1);
+                    $("#NG2").text(data.ng2.ng2);
+                    $("#NG3").text(data.ng3.ng3);
+                    $("#NG4").text(data.ng4.ng4);
+                    $("#NG5").text(data.ng5.ng5);
+                    $("#NG6").text(data.ng6.ng6);
+                    $("#NG7").text(data.ng7.ng7);
+                    $("#NG8").text(data.ng8.ng8);
+                    $("#NG9").text(data.ng9.ng9);
+                    $("#NG10").text(data.ng10.ng10);
+                    $("#NG11").text(data.ng11.ng11);
+                    $("#NG12").text(data.ng12.ng12);
+                    $("#NG13").text(data.ng13.ng13);
+                    $("#NG14").text(data.ng14.ng14);
                 }).catch(function(error) {
                     console.log(error);
                 });
@@ -1825,7 +1821,7 @@ error_reporting(E_ALL);
 
         }
 
-
+	
         document.addEventListener("DOMContentLoaded", (event) => {
             getData();
             prodtime_6am7am();
@@ -1872,7 +1868,33 @@ error_reporting(E_ALL);
             setInterval(fetchData, 2000);
             setInterval(fetchDataDh, 2000);
         });
+
+	
     </script>
+   <script>
+     function checkValues(ids){
+          ids.forEach(id =>{
+                const element = document.getElementById(id);
+                if(element){
+                   const value = parseFloat(element.textContent)||0;
+                   if(value < 100){
+                        element.classList.add("red-text");
+                        element.classList.remove("green-text");
+                   }else{
+                        
+                        element.classList.add("green-text");
+                   }
+                
+                }
+
+          });
+
+        }
+
+	const elementIDs =["achieved1","achieved2","achieved3","achieved4","achieved5","achieved6","achieved7","achieved8","achieved9","achieved10","achieved11","achieved11","achieved12","achieved13","achieved14"]
+	 document.addEventListener("DOMContentLoaded",() => checkValues(elementIDs));
+
+  </script>
 </body>
 
 </html>
